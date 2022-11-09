@@ -13,9 +13,18 @@
         &--input{
             padding: 8px 270px 8px 16px;
             outline: none;
-            background: #FFFFFF;
-            opacity: 0.2;
-            color: #FFFFFF;
+            background: #534e4e;
+            border: none;
+            &::placeholder{
+                color: #fff;
+            }
+        }
+        &--btn{
+            padding: 6px 12px;
+            margin-left: 10px;
+            background-color: transparent;
+            border: 1px solid #fff;
+            color: #fff;
         }
         &--icons{
             margin-left: auto;
