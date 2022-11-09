@@ -1,0 +1,32 @@
+.footer{
+    &__top{
+        width: 100%;
+        background-color: #000;
+        &--hero{
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+        }
+        &--email{
+            margin: auto;
+        }
+        &--input{
+            padding: 8px 270px 8px 16px;
+            outline: none;
+            background: #FFFFFF;
+            opacity: 0.2;
+            color: #FFFFFF;
+        }
+        &--icons{
+            margin-left: auto;
+        }
+        &--logo{
+            align-items: center;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18px;
+            color: #ffffff;
+        }
+    }
+
+}
