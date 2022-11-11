@@ -12,6 +12,9 @@
             margin-left: auto;
         }
     }
+    &__toggle{
+        display: none;
+    }
     &__left{
      &--list{
         display: flex;
@@ -107,6 +110,7 @@
     }
     .header{
         &__toggle{
+            display: block;
             margin-left: auto;
             font-size: 25px;
         }

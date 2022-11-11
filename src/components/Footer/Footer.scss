@@ -25,6 +25,7 @@
             background-color: transparent;
             border: 1px solid #fff;
             color: #fff;
+            cursor: pointer;
         }
         &--icons{
             margin-left: auto;
@@ -173,6 +174,50 @@
     .container{
         max-width: 430px;
     }
+    .footer__top{
+        &--input{
+            padding: 6px 40px 6px 12px;
+            font-size: 8px;
+        }
+        &--btn{
+            padding: 4px 6px;
+            font-size: 10px;
+        }
+        &--logo{
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+     .header__right{
+        &--icon{
+            font-size: 10px;
+            padding: 0 5px;
+        }
+    }
+    .footer__middle{
+          &--paragraph{
+            font-size: 12px;
+          }  
+          &--navlink{
+            font-size: 12px;
+          }
+    }
+    .footer__bottom{
+        &--logo,&--author{
+            font-size: 10px;
+        }
+            &__hero{
+                padding: 10px 0;
+            }
+            &--icon{
+                font-size: 20px;
+                padding: 0 2px;
+            }
+            &--span{
+                font-weight: bold;
+            }
+        }
+
 }
 @media screen and (max-width: 320px){
     .container{
