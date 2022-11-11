@@ -1,0 +1,21 @@
+.toggle{
+    &__hero{
+        display: flex;
+        justify-content: start;
+    }
+    &__list{
+        padding: 20px 0;
+    }
+    &__item{
+        padding: 10px 0;
+        &--links{
+            font-size: 20px;
+            line-height: 0;
+            color: black;
+            &:hover{
+                color: gray;
+                opacity: 0.8;
+            }
+        }
+    }
+}
