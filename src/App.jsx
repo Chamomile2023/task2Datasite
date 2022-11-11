@@ -8,7 +8,9 @@ const App = () => {
   return (
     <>
       <Header />
-      <RouteComponent />
+      <main className="main">
+        <RouteComponent />
+      </main>
       <Footer />
     </>
   );
