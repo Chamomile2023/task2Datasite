@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 .header{
     width: 100%;
+    &__hero{
+        align-items: center;
+    }
     &__black{
         background-color: #121212;
     }
@@ -14,6 +17,7 @@
     }
     &__toggle{
         display: none;
+        align-items: center;
     }
     &__left{
      &--list{
@@ -133,5 +137,15 @@
 @media screen and (max-width: 320px){
     .container{
         max-width: 280px;
+    }
+}
+@media screen and (max-width: 270px){
+    .container{
+        max-width: 250px;
+    }
+    .header{
+        &__toggle{
+            font-size: 20px;
+        }
     }
 }
