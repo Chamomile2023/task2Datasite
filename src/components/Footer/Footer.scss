@@ -223,4 +223,29 @@
     .container{
         max-width: 300px;
     }
+    .footer__top{
+        &--list{
+            display: none;
+        }
+        &--input{
+            padding: 4px 10px 4px 8px;
+            font-size: 8px;
+        }
+        &--btn{
+            padding: 3px 6px;
+            font-size: 8px;
+        }
+        &--logo{
+            font-size: 8px;
+            line-height: 10px;
+        }
+    }
+}
+@media screen and (max-width: 270px){
+    .container{
+        max-width: 250px;
+    }
+    .footer__middle__hero {
+        padding: 0px 0;
+    }
 }
