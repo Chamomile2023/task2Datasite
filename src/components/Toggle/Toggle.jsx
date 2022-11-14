@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import "./Toggle.scss";
 import { NavLink } from "react-router-dom";
-
 const Toggle = () => {
   return (
     <>
       <div className="toggle">
-        <div className="container">
-          <div className="toggle__hero">
+        {/* <div className={` ${show ? "toggle__hero" : "toggle__hero--active"}`}> */}
+        <div className="toggle__hero">
+          <div className="toggle__left">
+            <div className="toggle__left--top">
+              <NavLink to="/" className="header__logo--logo">
+                MiSto
+              </NavLink>
+              <i className="fa-solid fa-xmark toggle__left--close"></i>
+            </div>
             <ul className="toggle__list">
               <li className="toggle__item">
                 <NavLink to="/" className="toggle__item--links">
@@ -45,6 +51,33 @@ const Toggle = () => {
                 </NavLink>
               </li>
             </ul>
+            <div className="toggle__icons">
+              <ul className="header__right--list">
+                <li className="header__right--item">
+                  <a href="#">
+                    <i className="fa-brands fa-facebook toggle__left--icon"></i>
+                  </a>
+                </li>
+                <li className="header__right--item">
+                  <a href="#">
+                    <i className="fa-brands fa-twitter toggle__left--icon"></i>
+                  </a>
+                </li>
+                <li className="header__right--item">
+                  <a href="#">
+                    <i className="fa-brands fa-instagram toggle__left--icon"></i>
+                  </a>
+                </li>
+                <li className="header__right--item">
+                  <a href="#">
+                    <i className="fa-brands fa-pinterest toggle__left--icon"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="toggle__right">
+            <div className="toggle__overlay"></div>
           </div>
         </div>
       </div>

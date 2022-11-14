@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
+import { ToggleContext } from "../context/Toggle/Toggle";
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
               <div className="header__navbar--left">
                 <ul className="header__left--list">
                   <li className="left__list--item">
-                    <i class="fa-solid fa-phone header__list--icon"></i>
+                    <i className="fa-solid fa-phone header__list--icon"></i>
                     <a
                       href="tel: +38 (050) 12 34 567"
                       className="header__left--link"
@@ -21,13 +22,13 @@ const Header = () => {
                     </a>
                   </li>
                   <li className="left__list--item fa-2 additional">
-                    <i class="fa-solid fa-location-dot header__list--icon"></i>
+                    <i className="fa-solid fa-location-dot header__list--icon"></i>
                     <a href="#" className="header__left--link ">
                       Ukraine, Kyiv,Khreshchatyk 1
                     </a>
                   </li>
                   <li className="left__list--item additional">
-                    <i class="fa-solid fa-clock header__list--icon"></i>
+                    <i className="fa-solid fa-clock header__list--icon"></i>
                     <a href="#" className="header__left--link ">
                       All week 24/7
                     </a>
@@ -38,22 +39,22 @@ const Header = () => {
                 <ul className="header__right--list">
                   <li className="header__right--item">
                     <a href="#">
-                      <i class="fa-brands fa-facebook header__right--icon"></i>
+                      <i className="fa-brands fa-facebook header__right--icon"></i>
                     </a>
                   </li>
                   <li className="header__right--item">
                     <a href="#">
-                      <i class="fa-brands fa-twitter header__right--icon"></i>
+                      <i className="fa-brands fa-twitter header__right--icon"></i>
                     </a>
                   </li>
                   <li className="header__right--item">
                     <a href="#">
-                      <i class="fa-brands fa-instagram header__right--icon"></i>
+                      <i className="fa-brands fa-instagram header__right--icon"></i>
                     </a>
                   </li>
                   <li className="header__right--item">
                     <a href="#">
-                      <i class="fa-brands fa-pinterest header__right--icon"></i>
+                      <i className="fa-brands fa-pinterest header__right--icon"></i>
                     </a>
                   </li>
                 </ul>
@@ -70,7 +71,7 @@ const Header = () => {
                 </NavLink>
               </div>
               <div className="header__toggle">
-                <i class="fa-solid fa-bars"></i>
+                <i className="fa-solid fa-bars"></i>
               </div>
               <ul className="header__list">
                 <li className="header__item">
@@ -110,8 +111,8 @@ const Header = () => {
                 </li>
               </ul>
               <div className="header__icons">
-                <i class="fa-solid fa-magnifying-glass header__icon"></i>
-                <i class="fa-regular fa-user header__icon"></i>
+                <i className="fa-solid fa-magnifying-glass header__icon"></i>
+                <i className="fa-regular fa-user header__icon"></i>
               </div>
             </div>
           </div>

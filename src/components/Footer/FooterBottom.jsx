@@ -13,13 +13,13 @@ const FooterBottom = () => {
             </div>
             <div className="footer__bottom--icons">
               <NavLink to="#">
-                <i class="fa-brands fa-cc-visa footer__bottom--icon"></i>
+                <i className="fa-brands fa-cc-visa footer__bottom--icon"></i>
               </NavLink>
               <NavLink to="">
-                <i class="fa-brands fa-cc-paypal footer__bottom--icon"></i>
+                <i className="fa-brands fa-cc-paypal footer__bottom--icon"></i>
               </NavLink>
               <NavLink to="">
-                <i class="fa-brands fa-cc-mastercard footer__bottom--icon"></i>
+                <i className="fa-brands fa-cc-mastercard footer__bottom--icon"></i>
               </NavLink>
             </div>
             <div className="footer__bottom--author">
