@@ -1,18 +1,22 @@
 import React, { useState, useContext } from "react";
 import "./Toggle.scss";
 import { NavLink } from "react-router-dom";
+import { ToggleContext } from "../context/Toggle/ToggleContext";
 const Toggle = () => {
+  const { show, setShow } = useContext(ToggleContext);
   return (
     <>
       <div className="toggle">
-        {/* <div className={` ${show ? "toggle__hero" : "toggle__hero--active"}`}> */}
-        <div className="toggle__hero">
+        <div className={` ${show ? "toggle__hero" : "toggle__hero--active"}`}>
           <div className="toggle__left">
             <div className="toggle__left--top">
               <NavLink to="/" className="header__logo--logo">
                 MiSto
               </NavLink>
-              <i className="fa-solid fa-xmark toggle__left--close"></i>
+              <i
+                className="fa-solid fa-xmark toggle__left--close"
+                onClick={() => setShow(!show)}
+              ></i>
             </div>
             <ul className="toggle__list">
               <li className="toggle__item">
@@ -52,7 +56,7 @@ const Toggle = () => {
               </li>
             </ul>
             <div className="toggle__icons">
-              <ul className="header__right--list">
+              <ul className="toggle__icons--list">
                 <li className="header__right--item">
                   <a href="#">
                     <i className="fa-brands fa-facebook toggle__left--icon"></i>

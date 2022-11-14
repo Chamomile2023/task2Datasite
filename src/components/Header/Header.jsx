@@ -1,9 +1,10 @@
 import React, { useContext, useState } from "react";
 import "./Header.scss";
 import { NavLink } from "react-router-dom";
-import { ToggleContext } from "../context/Toggle/Toggle";
+import { ToggleContext } from "../context/Toggle/ToggleContext";
 
 const Header = () => {
+  const { show, setShow } = useContext(ToggleContext);
   return (
     <>
       <header className="header">
@@ -70,7 +71,7 @@ const Header = () => {
                   MiSto
                 </NavLink>
               </div>
-              <div className="header__toggle">
+              <div className="header__toggle" onClick={() => setShow(!show)}>
                 <i className="fa-solid fa-bars"></i>
               </div>
               <ul className="header__list">
