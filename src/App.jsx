@@ -1,14 +1,14 @@
 import React, { useContext, useState } from "react";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import RouteComponent from "./routes/RouteComponent";
+// import RouteComponent from "./routes/RouteComponent";
 import "./App.scss";
 import Toggle from "./components/Toggle/Toggle";
 import { ToggleContext } from "./components/context/Toggle/ToggleContext";
+import Main from "./components/Main/Main";
 
 const App = () => {
   const [show, setShow] = useState(false);
-  console.log(show);
   return (
     <>
       <ToggleContext.Provider value={{ show, setShow }}>
@@ -16,7 +16,7 @@ const App = () => {
         <Toggle />
       </ToggleContext.Provider>
       <main className="main">
-        <RouteComponent />
+        <Main />
       </main>
       <Footer />
     </>

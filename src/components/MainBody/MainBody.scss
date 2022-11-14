@@ -1,0 +1,53 @@
+.main{
+    &__pictures{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        width: 560px;
+        height: 490px;
+    }
+    &__right{
+        width: 560px;
+        height: 490px;
+        &--top{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 30px;
+        }
+    }
+    &__picture{
+        &--two{
+            height: 200px;
+        }
+        &--bottom{
+            width: 275px;
+        }
+    }
+    &__words{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 32px 0;
+    }
+    &__word{
+        display: flex;
+        &--img{
+            padding-right: 15px;
+        }
+    }
+    &__text--title{
+        font-family: 'Spartan';
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 13px;
+        &--paragraph{
+            font-family: 'Spartan';
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 22px;
+            color: gray;
+            opacity: 0.9;
+        }
+    }
+}
