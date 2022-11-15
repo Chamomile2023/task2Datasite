@@ -8,7 +8,7 @@ const RouteComponent = () => {
   return (
     <>
       <Routes>
-        <Route path="/main" element={<MainBody />} />
+        <Route path="/" element={<MainBody />} />
       </Routes>
     </>
   );

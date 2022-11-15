@@ -10,22 +10,23 @@ const MainBody = () => {
                     <div className="main__hero">
                         <div className="main__pictures">
                             <div className="main__left">
-                                <img src="/src/img/1.png" alt="one" />
-                                <Button>your Title text </Button>
+                                <img src="/src/img/1.png" alt="one" className="main__picture--img1" />
+                                <Button className="main__left--one">your Title text </Button>
                             </div>
                             <div className="main__right">
                                 <div className="main__right--top">
                                     <div className="main__picture--two">
-                                        <img src="/src/img/2.jpg" alt="two" />
-                                        <Button>Women</Button>
+                                        <img src="/src/img/2.jpg" alt="two" className="main__picture--img2" />
+                                        <Button className="main__left--two">Women</Button>
                                     </div>
                                     <div className="main__picture--two">
-                                        <img src="/src/img/3.jpg" alt="three" />
-                                        <Button>Men</Button>
+                                        <img src="/src/img/3.jpg" alt="three" className="main__picture--img2" />
+                                        <Button className="main__left--three">Men</Button>
                                     </div>
                                 </div>
                                 <div className="main__picture--bottom">
-                                    <img src="/src/img/4.jpg" alt="four" />
+                                    <img src="/src/img/4.jpg" alt="four" className="main__picture--img" />
+                                    <Button className="main__left--four">Accessories</Button>
                                 </div>
                             </div>
                         </div>
