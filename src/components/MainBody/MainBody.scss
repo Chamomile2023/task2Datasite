@@ -195,6 +195,46 @@
     .container{
         max-width: 430px;
     }
+    .main{
+        &__hero{
+            position: relative;
+        }
+        &__left{
+            height: 360px;
+        }
+        .main__right--top {
+            justify-content: center;
+        }
+        &__pictures{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        &__picture{
+            &--img1{
+                width: 420px;
+                height: 350px;
+            }
+            &--img2{
+                width: 200px;
+                height: 200px;
+            }
+            &--img3{
+                width: 200px;
+                height: 200px;
+            }
+            &--img{
+                width: 490px;
+                height: 300px;
+            }
+            &--two{
+                padding: 0 10px;
+            }
+        }
+    }
 }
 @media screen and (max-width: 320px){
     .container{

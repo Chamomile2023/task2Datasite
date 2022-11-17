@@ -5,6 +5,9 @@ import one from '../img/1.png'
 import two from '../img/2.jpg'
 import three from '../img/3.jpg'
 import four from '../img/4.jpg'
+import svg1 from '../img/i1.svg'
+import svg2 from '../img/i2.svg'
+import svg3 from '../img/i3.svg'
 
 const MainBody = () => {
     return (
@@ -37,7 +40,7 @@ const MainBody = () => {
                         <div className="main__words">
                             <div className="main__word">
                                 <div className="main__word--img">
-                                    <img src="/src/img/i1.svg" alt="" />
+                                    <img src={svg1} alt="" />
                                 </div>
                                 <div className="main__text">
                                     <h5 className="main__text--title">FREE SHIPPING</h5>
@@ -46,7 +49,7 @@ const MainBody = () => {
                             </div>
                             <div className="main__word">
                                 <div className="main__word--img">
-                                    <img src="/src/img/i2.svg" alt="" />
+                                    <img src={svg2} alt="" />
                                 </div>
                                 <div className="main__text">
                                     <h5 className="main__text--title">30 DAYS RETURN</h5>
@@ -55,7 +58,7 @@ const MainBody = () => {
                             </div>
                             <div className="main__word">
                                 <div className="main__word--img">
-                                    <img src="/src/img/i3.svg" alt="" />
+                                    <img src={svg3} alt="" />
                                 </div>
                                 <div className="main__text">
                                     <h5 className="main__text--title">SUPPORT 24/7</h5>
