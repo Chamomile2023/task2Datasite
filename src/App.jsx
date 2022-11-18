@@ -6,6 +6,7 @@ import "./App.scss";
 import Toggle from "./components/Toggle/Toggle";
 import { ToggleContext } from "./components/context/Toggle/ToggleContext";
 import Main from "./components/Main/Main";
+import Card from "./components/Card/Card";
 
 const App = () => {
   const [show, setShow] = useState(false);
