@@ -45,8 +45,6 @@
         display: flex;
     }
     &--icon{
-        height: 13px;
-        width: 13px;
         color: #FFFFFF;
         opacity: 0.8;
         padding-left: 12px;
@@ -56,6 +54,8 @@
 &__nav{
     background-color: #FFFFFF;
     border-bottom: 2px solid #F8F8F8;
+    background-color: green;
+    display: none;
 }
 &__hero,&__list{
     display: flex;
@@ -87,30 +87,60 @@
 .additional{
     padding-left: 15px;
 }
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1400px){
+    .container{
+        max-width: 1380px;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 1220px){
     .container{
         max-width: 1200px;
+        padding: 0 10px;
+    }
+    .header{
+        &__navbar{
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+        }
     }
 }
 @media screen and (max-width: 992px){
     .container{
-        max-width: 960px;
-    }
-    .header{
-        &__item--links{
-            padding-left: 22px;
-        }
-
+        max-width: 972px;
+        padding: 0 10px;
     }
 }
 @media screen and (max-width: 768px){
     .container{
-        max-width: 720px;
+        max-width: 748px;
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 610px){
+    .container{
+        max-width: 590px;
+        padding: 0 10px;
+    }
+    .header{
+        &__left{
+            &--link{
+                font-size: 12px;
+                line-height: 8px;
+            }
+        }
+        &__right{
+            &--icon{
+                font-size: 15px;
+            }
+        }
     }
 }
 @media screen and (max-width: 576px){
     .container{
-        max-width: 540px;
+        max-width: 556px;
+        padding: 0 10px;
     }
     .header{
         &__toggle{
@@ -131,17 +161,20 @@
 }
 @media screen and (max-width: 460px){
     .container{
-        max-width: 430px;
+        max-width: 440px;
+        padding: 0 10px;
     }
 }
 @media screen and (max-width: 320px){
     .container{
-        max-width: 280px;
+        max-width: 300px;
+        padding: 0 10px;
     }
 }
 @media screen and (max-width: 270px){
     .container{
         max-width: 250px;
+        padding: 0 10px;
     }
     .header{
         &__toggle{

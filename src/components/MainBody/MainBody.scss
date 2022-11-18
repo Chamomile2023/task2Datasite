@@ -1,4 +1,6 @@
 .main{
+    display: none;
+    height: 100vh;
     &__hero{
         padding: 32px 0;
     }
@@ -144,6 +146,7 @@
         &__pictures{
             display: flex;
             flex-direction: column;
+            // align-items: center;
             position: absolute;
             top: 50%;
             left: 50%;

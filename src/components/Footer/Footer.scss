@@ -1,6 +1,7 @@
 .footer{
     &__top{
         width: 100%;
+        display: none;
         background-color: #000;
         &--hero{
             display: flex;
@@ -41,6 +42,7 @@
 
 }
 .footer__middle{
+    display: none;
     &__hero{
         display: flex;
         justify-content: space-between;
@@ -71,6 +73,7 @@
     }
 }
 .footer__bottom{
+    display: none;
     background-color: #F8F8F8;
     &__hero{
         display: flex;
@@ -88,178 +91,178 @@
     }
 }
 
-@media screen and (max-width: 1300px){
-    .container{
-        max-width: 1200px;
-    }
-}
-@media screen and (max-width: 992px){
-    .container{
-        max-width: 960px;
-    }
-}
-@media screen and (max-width: 768px){
-    .container{
-        max-width: 720px;
-    }
-    .footer__top{
-        &--input{
-            padding: 6px 180px 6px 12px;
-            font-size: 12px;
-        }
-        &--btn{
-            padding: 4px 10px;
-            font-size: 12px;
-        }
-        &--logo{
-            font-size: 12px;
-            line-height: 16px;
-        }
-    }
-    .footer__middle{
-        &--paragraph{
-        font-size: 14px;
-        line-height: 11px;
-        padding-bottom: 10px;
-        }
-    }
-}
-@media screen and (max-width: 576px){
-    .container{
-        max-width: 540px;
-    }
-    .footer__top{
-        &--logo{
-            font-size: 12px;
-            line-height: 10px;
-        }
-        &--input{
-            padding: 5px 60px 5px 10px;
-            font-size: 12px;
-        }
-        &--btn{
-            padding: 4px 8px;
-            font-size: 10px;
-        }
-    }
-    .header__right{
-        &--icon{
-            font-size: 14px;
-        }
-    }
-    .footer__middle{
-        &__hero{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-        &--paragraph{
-            padding-top: 25px;
-        }
-        &--author{
-            text-align: center;
-        }
-    }
-    .footer__bottom{
-        &__hero{
-            display: flex;
-            justify-content: space-between;
-        }
-        &--logo, &--icons, &--author{
-            text-align: center;
-        }
-    }
-    .footer__middle__hero {
-        padding: 0;
-    }
-}
-@media screen and (max-width: 460px){
-    .container{
-        max-width: 430px;
-    }
-    .footer__top{
-        &--input{
-            padding: 6px 40px 6px 12px;
-            font-size: 8px;
-        }
-        &--btn{
-            padding: 4px 6px;
-            font-size: 10px;
-        }
-        &--logo{
-            font-size: 8px;
-            line-height: 10px;
-        }
-    }
-     .header__right{
-        &--icon{
-            font-size: 10px;
-            padding: 0 5px;
-        }
-    }
-    .footer__middle{
-          &--paragraph{
-            font-size: 12px;
-          }  
-          &--navlink{
-            font-size: 12px;
-          }
-    }
-    .footer__bottom{
-        &--logo,&--author{
-            font-size: 10px;
-        }
-            &__hero{
-                padding: 10px 0;
-            }
-            &--icon{
-                font-size: 20px;
-                padding: 0 2px;
-            }
-            &--span{
-                font-weight: bold;
-            }
-        }
-        .footer__middle__hero {
-            padding: 0;
-        }
-}
-@media screen and (max-width: 320px){
-    .container{
-        max-width: 300px;
-    }
-    .footer__top{
-        &--list{
-            display: none;
-        }
-        &--input{
-            padding: 4px 10px 4px 8px;
-            font-size: 8px;
-        }
-        &--btn{
-            padding: 3px 6px;
-            font-size: 8px;
-        }
-        &--logo{
-            font-size: 8px;
-            line-height: 10px;
-        }
-    }
-}
-@media screen and (max-width: 270px){
-    .container{
-        max-width: 250px;
-    }
-    .footer__middle__hero {
-        padding: 0px 0;
-    }
-    .footer__bottom{
-        &__hero{
-            display: flex;
-            flex-direction: column;
-        }
-        &--icon{
-            padding: 10px 0;
-        }
-    }
-}
+// @media screen and (max-width: 1300px){
+//     .container{
+//         max-width: 1200px;
+//     }
+// }
+// @media screen and (max-width: 992px){
+//     .container{
+//         max-width: 960px;
+//     }
+// }
+// @media screen and (max-width: 768px){
+//     .container{
+//         max-width: 720px;
+//     }
+//     .footer__top{
+//         &--input{
+//             padding: 6px 180px 6px 12px;
+//             font-size: 12px;
+//         }
+//         &--btn{
+//             padding: 4px 10px;
+//             font-size: 12px;
+//         }
+//         &--logo{
+//             font-size: 12px;
+//             line-height: 16px;
+//         }
+//     }
+//     .footer__middle{
+//         &--paragraph{
+//         font-size: 14px;
+//         line-height: 11px;
+//         padding-bottom: 10px;
+//         }
+//     }
+// }
+// @media screen and (max-width: 576px){
+//     .container{
+//         max-width: 540px;
+//     }
+//     .footer__top{
+//         &--logo{
+//             font-size: 12px;
+//             line-height: 10px;
+//         }
+//         &--input{
+//             padding: 5px 60px 5px 10px;
+//             font-size: 12px;
+//         }
+//         &--btn{
+//             padding: 4px 8px;
+//             font-size: 10px;
+//         }
+//     }
+//     .header__right{
+//         &--icon{
+//             font-size: 14px;
+//         }
+//     }
+//     .footer__middle{
+//         &__hero{
+//             display: flex;
+//             flex-wrap: wrap;
+//             justify-content: space-between;
+//         }
+//         &--paragraph{
+//             padding-top: 25px;
+//         }
+//         &--author{
+//             text-align: center;
+//         }
+//     }
+//     .footer__bottom{
+//         &__hero{
+//             display: flex;
+//             justify-content: space-between;
+//         }
+//         &--logo, &--icons, &--author{
+//             text-align: center;
+//         }
+//     }
+//     .footer__middle__hero {
+//         padding: 0;
+//     }
+// }
+// @media screen and (max-width: 460px){
+//     .container{
+//         max-width: 430px;
+//     }
+//     .footer__top{
+//         &--input{
+//             padding: 6px 40px 6px 12px;
+//             font-size: 8px;
+//         }
+//         &--btn{
+//             padding: 4px 6px;
+//             font-size: 10px;
+//         }
+//         &--logo{
+//             font-size: 8px;
+//             line-height: 10px;
+//         }
+//     }
+//      .header__right{
+//         &--icon{
+//             font-size: 10px;
+//             padding: 0 5px;
+//         }
+//     }
+//     .footer__middle{
+//           &--paragraph{
+//             font-size: 12px;
+//           }  
+//           &--navlink{
+//             font-size: 12px;
+//           }
+//     }
+//     .footer__bottom{
+//         &--logo,&--author{
+//             font-size: 10px;
+//         }
+//             &__hero{
+//                 padding: 10px 0;
+//             }
+//             &--icon{
+//                 font-size: 20px;
+//                 padding: 0 2px;
+//             }
+//             &--span{
+//                 font-weight: bold;
+//             }
+//         }
+//         .footer__middle__hero {
+//             padding: 0;
+//         }
+// }
+// @media screen and (max-width: 320px){
+//     .container{
+//         max-width: 300px;
+//     }
+//     .footer__top{
+//         &--list{
+//             display: none;
+//         }
+//         &--input{
+//             padding: 4px 10px 4px 8px;
+//             font-size: 8px;
+//         }
+//         &--btn{
+//             padding: 3px 6px;
+//             font-size: 8px;
+//         }
+//         &--logo{
+//             font-size: 8px;
+//             line-height: 10px;
+//         }
+//     }
+// }
+// @media screen and (max-width: 270px){
+//     .container{
+//         max-width: 250px;
+//     }
+//     .footer__middle__hero {
+//         padding: 0px 0;
+//     }
+//     .footer__bottom{
+//         &__hero{
+//             display: flex;
+//             flex-direction: column;
+//         }
+//         &--icon{
+//             padding: 10px 0;
+//         }
+//     }
+// }
